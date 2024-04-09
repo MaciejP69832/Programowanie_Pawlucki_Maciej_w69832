@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="utf-8" />
-    <title>Moje ulubione seriale!</title>
+    <title>Formularz kontaktowy</title>
 </head>
 <body style="font-family: 'Arial', sans-serif; background-color: #f7f7f7; margin: 0; padding: 0;">
     <header style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
@@ -12,14 +12,15 @@
         <h4>Rozwiązanie Lab1</h4>
     </header>
     <section style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
-        <h3>Zadanie 8.</h3>
-        <h3>Ulubione seriale:</h5>
-            <ol>
-                <li><a href = https://www.netflix.com/pl-en/title/80236318>Outer Banks</a></li>
-                <li><a href = https://www.hbo.com/game-of-thrones>Gra o Tron</a></li>
-                <li><a href = https://www.cbs.com/shows/the_bold_and_the_beautiful>The Bold and the Beautiful</a></li>
-            </ol>
-            <h5><a href = index.html>Powrót na stronę startową!</a></h5>
+        <h3>Zadanie 9.</h3>
+        <p style="color: #333;"><form action="redirect.html" method="post">
+            <label for="email">Twój adres e-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Twoja wiadomość:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Wyślij">
+        </form></p>
+        <h5><a href = index.html>Powrót na stronę startową!</a></h5>
     </section>
     <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center; margin-top: 20px;">
         <p>© 2024 Maciej Pawłucki. Wszelkie prawa zastrzeżone.</p>

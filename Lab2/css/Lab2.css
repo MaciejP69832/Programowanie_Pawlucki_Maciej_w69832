@@ -22,3 +22,13 @@
 .wyksztalcenie {
     margin-top: 10%;
 }
+.header1 {
+    align-items: flex-end;
+    margin-right: auto;
+}
+.header a {
+    text-decoration: none;
+    color: black; 
+    padding: 0 40px; 
+    justify-content: flex-end;
+}

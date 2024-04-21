@@ -1,0 +1,24 @@
+.menu{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+    max-width: 80%;
+    margin-right: 7%
+}
+.imie {
+    color:blue
+}
+.glowna{
+    color: aquamarine;
+}
+.zainteresowania {
+    margin-top: 10%
+}
+.ksiazki {
+    margin-top: 10%
+}
+.wyksztalcenie {
+    margin-top: 10%;
+}

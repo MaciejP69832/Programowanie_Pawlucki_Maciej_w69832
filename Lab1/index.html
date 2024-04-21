@@ -6,13 +6,37 @@
     <title>Strona o mnie!</title>
 </head>
 <style>
+    /* Zadania 1,2,3 */
     body {
       margin: 0;
       padding: 0;
-      font-family: "Arial", sans-serif;
-      background-color: #f7f7f7
+      font-family: "Inter", sans-serif;
+      background-color: #f7f7f7;
+      box-sizing: content-box; 
     }
     
+    header {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        background-color: lightgrey; 
+        display: flex; 
+        align-items: flex-end; 
+        justify-content: space-between; 
+        box-shadow: 0 0 10px 2px #5f5d5d; 
+        padding: 0 15px; 
+        z-index: 100; 
+    }
+
+    header a {
+        text-decoration: none;
+        color: black; 
+        padding: 0 15px; 
+    }
+    header a.highlight {
+    color: lime; 
+  }
     h1 {
       font-size: 50px;
     }
@@ -20,21 +44,40 @@
     h4 {
       font-size: 30px;
     }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+        color: #333
+    }
+    footer {
+        background-color: #333;
+        color: #fff; 
+        padding: 20px; 
+        text-align: center; 
+        margin-top: 20px;
+    }
   </style>
-<body style="font-family: 'Arial', sans-serif; background-color: #f7f7f7; margin: 0; padding: 0;">
-    <header style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+<body>
+    <header>
         <h1>Maciej Pawłucki</h1>
-        <h2>Junior IT Specialist</h2>
-        <h3>Student Wyższej Szkoły Informatyki i Zarządzania w Rzeszowie</h3>
-        <h4>Rozwiązanie Lab1</h4>
+        <h4><a href = "index.html" class="highlight">Strona główna</a></h4>
+        <h4><a href = "ulubioneseriale.html">Ulubione Seriale</a></h4>
+        <h4><a href = "ulubioneksiazki.html">Ulubione Książki</a></h4>
     </header>
 
-    <section style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+    <section>
         <h3>Zadanie 1.</h3>
-        <p style="font-family:Times New Roman; color: #333;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a dui et arcu pulvinar porttitor in at ex. Praesent ut purus sed enim pellentesque rutrum. Vestibulum tempus turpis id risus fringilla, vitae sagittis risus aliquam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a dui et arcu pulvinar porttitor in at ex. Praesent ut purus sed enim pellentesque rutrum. Vestibulum tempus turpis id risus fringilla, vitae sagittis risus aliquam.</p>
     </section>
 
-    <section style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+    <section>
         <h3>Zadanie 2, 3. i 8.</h3>
         <h4>Zainteresowania:</h4>
         <ul style="padding-left: 20px;">
@@ -46,7 +89,7 @@
         <h4><a href = "ulubioneksiazki.html">Ulubione książki</a></h4>
     </section>
 
-    <section style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+    <section>
         <h3>Zadanie 4.</h3>
         <table style="border-collapse: collapse; width: 100%; margin-top: 10px;">
             <tr>
@@ -68,7 +111,7 @@
         </table>
     </section>
 
-    <section style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+    <section>
         <h3>Zadanie 5.</h3>
         <table style="width: 100px; height: 100px; border-collapse: collapse;">
             <tr>
@@ -94,16 +137,16 @@
         </table>
     </section>
 
-    <section style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+    <section>
         <h3>Zadanie 6.</h3>
         <img src="https://learn.microsoft.com/en-us/shows/hello-world/media/helloworld_383x215.png" alt="Hello World!" style="display: block; margin: 0 auto; max-width: 100%;">
     </section>
-    <section style="margin: 20px; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+    <section>
         <h3>Zadanie 9.</h3>
         <h2><a href = "kontakt.html">Skontaktuj się!</a></h2>
     </section>
-    <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center; margin-top: 20px;">
-        <p>© 2024 Maciej Pawłucki. Wszelkie prawa zastrzeżone.</p>
+    <footer>
+        <p style="color:#ddd">© 2024 Maciej Pawłucki. Wszelkie prawa zastrzeżone.</p>
     </footer>
 </body>
 </html>

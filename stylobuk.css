@@ -1,0 +1,78 @@
+/* Stylobuk dla nowego layoutu strony */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+
+
+/* Pasek góra */
+.pasek{position:fixed;width:100%;z-index:1}.pasek{top:0}
+/* Marginesy wewnętrzne */
+.margwew{padding:8px 16px!important}
+.margwew-16{padding-top:16px!important;padding-bottom:16px!important}.margwew-24{padding-top:24px!important;padding-bottom:24px!important}
+.margwew-32{padding-top:32px!important;padding-bottom:32px!important}.margwew-48{padding-top:48px!important;padding-bottom:48px!important}
+.margwew-64{padding-top:64px!important;padding-bottom:64px!important}.margwew-80{padding-top:80px!important;padding-bottom:80px!important}
+
+
+/* Różne */
+/* rozmiarówka czcionki */
+.font-tiny{font-size:10px!important}.font-small{font-size:12px!important}.font-medium{font-size:15px!important}.font-large{font-size:18px!important}
+/* kolorki */
+.czarny{color:#000!important;background-color:lightgray!important}
+.tekst-bialy{color:#fff!important}
+.tlo-strony,.tlo-strony:hover{color:#fff!important;background-color:rgb(22, 45, 90)!important}
+.stopka-kolor,.stopka-kolor:hover{color:rgb(22, 45, 90)!important;text-decoration: none}
+.tlo-stopka{color:#000!important;background-color:#f1f1f1!important}
+/* Szeroki margines */
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.szeroki{letter-spacing:4px}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+
+/* Elementy kolumnowe */
+.kolumna{float:left;width:100%}
+.kolumna.s1{width:8.33333%}.kolumna.s2{width:16.66666%}.kolumna.s3{width:15.99999%}.kolumna.s4{width:33.33333%}
+.kolumna.s5{width:41.66666%}.kolumna.s6{width:49.99999%}.kolumna.s7{width:58.33333%}.kolumna.s8{width:66.66666%}
+.kolumna.s9{width:74.99999%}.kolumna.s10{width:83.33333%}.kolumna.s11{width:91.66666%}.kolumna.s12{width:99.99999%}
+@media (min-width:601px){.kolumna.m1{width:8.33333%}.kolumna.m2{width:16.66666%}.kolumna.m3,.w3-quarter{width:24.99999%}.kolumna.m4,.w3-third{width:33.33333%}
+.kolumna.m5{width:41.66666%}.kolumna.m6,.w3-half{width:49.99999%}.kolumna.m7{width:58.33333%}.kolumna.m8,.w3-twothird{width:66.66666%}
+.kolumna.m9,.w3-threequarter{width:74.99999%}.kolumna.m10{width:83.33333%}.kolumna.m11{width:91.66666%}.kolumna.m12{width:99.99999%}}
+@media (min-width:993px){.kolumna.l1{width:8.33333%}.kolumna.l2{width:16.66666%}.kolumna.l3{width:24.99999%}.kolumna.l4{width:33.33333%}
+.kolumna.l5{width:41.66666%}.kolumna.l6{width:49.99999%}.kolumna.l7{width:58.33333%}.kolumna.l8{width:66.66666%}
+.kolumna.l9{width:74.99999%}.kolumna.l10{width:83.33333%}.kolumna.l11{width:91.66666%}.kolumna.l12{width:99.99999%}}
+
+/* PRZYCISKI */
+.przycisk:hover{color:rgb(22, 45,90)!important;background-color:#fff!important}
+.przycisk{white-space:normal}
+.przycisk{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.przycisk{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.przycisk:disabled{cursor:not-allowed;opacity:0.3;pointer-events:none}
+.przycisk:first-child{background-color:#ccc;color:#000}
+
+/* Bloczki w typie display:block */
+.bloczek{display:block;width:100%}
+
+
+/* Zarezerwowane na pierwszy bloczek w nagłówku - do modyfikacji według potrzeb */
+.inicjaly:hover{color:#000!important;}
+.inicjaly{white-space:normal}
+.inicjaly{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;white-space:nowrap}
+.inicjaly{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.inicjaly:disabled{cursor:not-allowed;opacity:0.3;pointer-events:none}
+.inicjaly:first-child{background-color:#ccc;color:#000}
+
+/* KONTENEREK i PANELIK */
+.kontener:after,.kontener:before,.panelik:after,.panelik:before,.wiersz:after,.wiersz:before,.wiersz-padding:after,.wiersz-padding:before{content:"";display:table;clear:both}
+.kontener,.panelik{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+.zawartosc{margin-left:auto;margin-right:auto;max-width:980px}
+.wyswietl-kontener{position:relative}
+.wyswietl-kontener:hover{display:block}
+
+
+/* Boxowe obramowanie nagłówka kontenerków */
+.boxik{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
+
+/* Wyśrodkowany tekst */
+.wysrodkuj{text-align:center}
+.pokaz-wysrodkowany{position:absolute;top:30%;left:75%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.pokaz-wysrodkowany2{position:absolute;top:50%;left:75%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+
+
+.obrazek{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}

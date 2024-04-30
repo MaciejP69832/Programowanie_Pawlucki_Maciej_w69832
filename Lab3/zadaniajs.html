@@ -4,8 +4,9 @@
 <title>IT Solutions - Maciej Pawłucki</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylobuk.css">
+    <link rel="stylesheet" href="../stylobuk.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <script src="script.js"></script>
 <!-- Ustawienie globalne dla layoutu -->
 <style>
 body, html {
@@ -16,7 +17,7 @@ body, html {
 .tlo {
   background-position: center;
   background-size: cover;
-  background-image: url("welcome.avif");
+  background-image: url("../img/welcome.avif");
   min-height: 75%;
 }
 
@@ -24,6 +25,7 @@ body, html {
   display: none;
 }
 </style>
+
 </head>
 <!-- Część właściwa strony -->
 <body>
@@ -34,16 +36,16 @@ body, html {
       <a class="inicjaly bloczek czarny">Maciej Pawłucki</a>
     </div>
     <div class="kolumna s3">
-      <a href="#about" class="przycisk bloczek czarny">About</a>
+      <a href="../index.html" class="przycisk bloczek czarny">Główna</a>
     </div>
     <div class="kolumna s3">
-      <a href="Lab1/index.html" class="przycisk bloczek czarny">Lab1</a>
+      <a href="../Lab1/index.html" class="przycisk bloczek czarny">Lab1</a>
     </div>
     <div class="kolumna s3">
-      <a href="Lab2/index.html" class="przycisk bloczek czarny">Lab2</a>
+      <a href="../Lab2/index.html" class="przycisk bloczek czarny">Lab2</a>
     </div>
     <div class="kolumna s3">
-      <a href="Lab3/zadaniajs.html" class="przycisk bloczek czarny">Lab3</a>
+      <a href="zadaniajs.html#rozwiazania" class="przycisk bloczek czarny">Lab3</a>
     </div>
   </div>
 </div>
@@ -56,18 +58,113 @@ body, html {
     <span class="tekst-bialy" style="font-size:22px">Professional services for companies</span>
   </div>
 </header>
-
 <!-- Kolor tła strony oraz rozmiar czcionki -->
 <div class="tlo-strony font-large">
 <!-- Kawałek marginesu do oddzielenia sekcji -->
-<div class="wysrodkuj margwew-80">Zapraszamy!</div>
-
-<!-- O stronie -->
-<div class="kontener" id="about">
+<div class="wysrodkuj margwew-80">Oto rozwiązania zadań od Zad 3.</div>
+<!-- Zadanie 3 -->
+<div class="kontener" id="rozwiazania">
   <div class="zawartosc" style="max-width:700px">
-    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">WEBSITE INTENTION</span></h5>
-    <p>Strona powstała, by podzielić się rozwiązaniami zadań z laboratoriów z przedmiotu Programowanie na Wyższej Szkole Informatyki i Zarządzania w Rzeszowie. </p>
-    <p>Aby sprawdzić przebieg rozwiązywania zadań w ramach tego przedmiotu, proszę o wybranie odpowiedniego odnośnika u góry strony. Wykonałem podział na każde ze spotkań stacjonarnych w Centrum Turystyki i Rekreacji WSIiZ.</p>
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 3</span></h5>
+    <p>Utwórz zmienne: a=10, b=20, c=23.2, na zmiennych wykonaj instrukcje: dodawania, 
+      odejmowania, mnożenia i dzielenia.</p>
+    <p>Wyniki wyświetlić funkcją 'alert', w konsoli oraz w paragrafach pliku html.</p>
+    <p id="wynik"></p>
+    <button onclick="Zad3Alert()">Wyświetl alert</button>
+    <button onclick="Zad3Konsola()">Wyświetl w konsoli</button>
+    <button onclick="Zad3Paragraf()">Wyświetl/Schowaj w paragrafie</button>
+  </div>
+</div>
+<!-- Zadanie 4 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 4</span></h5>
+    <p>Wyświetl wszystkie liczby parzyste z przedziału od 0 do 100 w konsoli.</p>
+    <button onclick="Zad4Konsola()">Wyświetl w konsoli</button>
+  </div>
+</div>
+<!-- Zadanie 5 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 5</span></h5>
+    <p>Napisz program obliczający pole trójkąta o danych bokach.</p>
+    <p>Wyniki wyświetlić w konsoli oraz w specjalnie utworzonych elementach pliku HTML.</p>
+    <p id="wynik2" style="display:none;">
+      <label for="dlugosc_a">Długość pierwszego boku:</label>
+      <input type="number" min="0" id="dlugosc_a"><br><br>
+      
+      <label for="dlugosc_b">Długość drugiego boku:</label>
+      <input type="number" min="0" id="dlugosc_b"><br><br>
+      
+      <label for="dlugosc_c">Długość trzeciego boku:</label>
+      <input type="number" min="0" id="dlugosc_c"><br><br>
+      <button onclick="Zad5Oblicz()">Oblicz</button>
+      <div id="wynikpole"></div>
+    </p>
+    <button onclick="Zad5Konsola()">Wyświetl w konsoli</button>
+    <button onclick="Zad5Paragraf()">Wyświetl/Schowaj w paragrafie</button>
+  </div>
+</div>
+<!-- Zadanie 6 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 6</span></h5>
+    <p>Pobierz imię od użytkownika i powitaj go przy użyciu alert.</p>
+    <label for="imie">Czy chciałbyś/chciałabyś podać mi swoje imię?</label>
+    <input type="text" id="imie">
+    <button onclick="Zadanie6()">Say Hello!</button><br><br>
+  </div>
+</div>
+<!-- Zadanie 7 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 7</span></h5>
+    <p>Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych, a 
+      następnie wyświetli wynik dodawania tych liczb w oknie przeglądarki.</p>
+    <button onclick="Zadanie7()">Wywołaj program!</button><br><br>
+  </div>
+</div>
+<!-- Zadanie 8 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 8</span></h5>
+    <p>Napisz program który zwróci największą spośród trzech podanych przez użytkownika liczb.</p>
+    <p>Wynik wyświetlić w konsoli oraz w specjalnie utworzonych elementach pliku HTML</p>
+    <p id="paragraf2" style="display:none">
+      <button onclick="Zadanie8_paragraf2()">Rozpocznij!</button>
+      <div id="najwieksza"></div>
+    </p>
+    <button onclick="Zadanie8_prompt()">Wyświetl w konsoli!</button>
+    <button onclick="Zadanie8_paragraf()">Wyświetl/Ukryj paragraf</button>
+  </div>
+</div>
+<!-- Zadanie 9 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 9</span></h5>
+    <p>Napisz program który wyznaczy największy wspólny dzielnik dwóch liczb całkowitych podanych przez użytkownika.</p>
+    <button onclick="Zadanie9()">Wywołaj program!</button><br><br>
+  </div>
+</div>
+<!-- Zadanie 10 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 10</span></h5>
+    <p>Napisz funkcję, która będzie wyświetlać aktualny czas na stronie internetowej z 
+      odświeżaniem co sekundę. Funkcja powinna być wywołana automatycznie po
+      załadowaniu strony</p>
+    <p class="wysrodkuj">Aktualny czas:</p>
+    <div id="czas" class="wysrodkuj margwew-64"></div>
+  </div>
+</div>
+<!-- Zadanie 11 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 11</span></h5>
+    <p>Napisz grę w zgadywanie liczby.</p><br><br>
+    <p>Witaj w grze w zgadywanie liczby!</p>
+    <p>Wylosowano liczbę z przedziału od 0 do 100. Zgadnij, jaka to liczba!</p>
+    <button onclick="Zadanie11_2()">Wywołaj program!</button>
   </div>
 </div>
 <!-- Kawałek marginesu do oddzielenia sekcji -->
@@ -76,6 +173,5 @@ body, html {
 <footer class="wysrodkuj tlo-stopka margwew-48 font-large">
   <p>© 2024 <a href="mailto:w69832@student.wsiz.edu.pl?subject=Kontakt" title="Skontaktuj się!" class="stopka-kolor">Maciej Pawłucki</a></p>
 </footer>
-
 </body>
 </html>

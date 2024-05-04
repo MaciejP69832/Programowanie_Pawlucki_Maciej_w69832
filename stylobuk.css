@@ -28,7 +28,7 @@ h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-
 
 /* Elementy kolumnowe */
 .kolumna{float:left;width:100%}
-.kolumna.s1{width:8.33333%}.kolumna.s2{width:16.66666%}.kolumna.s3{width:15.99999%}.kolumna.s4{width:33.33333%}
+.kolumna.s1{width:8.33333%}.kolumna.s2{width:16.66666%}.kolumna.s3{width:12.99999%}.kolumna.s4{width:33.33333%}
 .kolumna.s5{width:41.66666%}.kolumna.s6{width:49.99999%}.kolumna.s7{width:58.33333%}.kolumna.s8{width:66.66666%}
 .kolumna.s9{width:74.99999%}.kolumna.s10{width:83.33333%}.kolumna.s11{width:91.66666%}.kolumna.s12{width:99.99999%}
 @media (min-width:601px){.kolumna.m1{width:8.33333%}.kolumna.m2{width:16.66666%}.kolumna.m3,.w3-quarter{width:24.99999%}.kolumna.m4,.w3-third{width:33.33333%}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../stylobuk.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <script src="script.js"></script>
+    <script src="../Lab4/script.js"></script>
 <!-- Ustawienie globalne dla layoutu -->
 <style>
 body, html {
@@ -25,7 +25,9 @@ body, html {
   display: none;
 }
 </style>
-
+<script>
+Zadanie3()
+</script>
 </head>
 <!-- Część właściwa strony -->
 <body>
@@ -48,8 +50,8 @@ body, html {
       <a href="../Lab3/zadaniajs.html#rozwiazania" class="przycisk bloczek czarny">Lab3</a>
     </div>
     <div class="kolumna s3">
-        <a href="../Lab4/zadaniajscd.html#rozwiazania" class="przycisk bloczek czarny">Lab4</a>
-      </div>
+      <a href="../Lab4/zadaniajscd.html#rozwiazania" class="przycisk bloczek czarny">Lab4</a>
+    </div>
   </div>
 </div>
 <!-- Header ze zdjęciem w tle -->
@@ -64,19 +66,39 @@ body, html {
 <!-- Kolor tła strony oraz rozmiar czcionki -->
 <div class="tlo-strony font-large">
 <!-- Kawałek marginesu do oddzielenia sekcji -->
-<div class="wysrodkuj margwew-80">Oto rozwiązania zadań.</div>
+<div class="wysrodkuj margwew-80">Oto rozwiązania zadań</div>
+<!-- Zadanie 1 -->
+<div class="kontener" id="rozwiazania">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 1</span></h5>
+    <p> Przy użyciu pętli wykonaj odliczanie sylwestrowe, na końcu wypisz „Happy New 
+      Year!”. Odliczanie wykonaj w konsoli. 
+      a. Użyj pętli for 
+      b. Użyj pętli while</p>
+    <button onclick="Zadanie1_1()">Wywołaj pętlą for</button>
+    <button onclick="Zadanie1_2()">Wywołaj pętlą while</button>
+  </div>
+</div>
+<!-- Zadanie 2 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 2</span></h5>
+    <p> Napisz funkcje, która obliczy silnię dla liczby całkowitej podanej jako argument.</p>
+    <button onclick="Zadanie2()">Wywołaj program!</button>
+  </div>
+</div>
+<!-- Zadanie 3 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 2</span></h5>
+    <p> Napisz funkcję weryfikującą czy użytkownik jest pełnoletni uruchamiająca się przy 
+      otworzeniu strony. W przypadku niespełnienia warunku ma zostać przekierowany na 
+      wariant strony dla dzieci. Wiek zapisuje się w pamięci lokalnej - naciśnij przycisk aby ją usunąć!</p>
+    <button onclick="usunwiek()">Usuń wiek!</button>
+  </div>
+</div>
 <!-- Kawałek marginesu do oddzielenia sekcji -->
 <div class="margwew-64"></div>
-<!-- Zadanie 1 -->
-<div class="kontener">
-    <div class="zawartosc" style="max-width:700px">
-      <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 1</span></h5>
-      <p> Przy użyciu pętli wykonaj odliczanie sylwestrowe, na końcu wypisz „Happy New 
-        Year!”. Odliczanie wykonaj w konsoli. 
-        a. Użyj pętli for 
-        b. Użyj pętli whilep>
-      <button onclick="Zadanie1()">Wyświetl w konsoli</button>
-    </div>
 <!-- Stopka przyklejona do dołu -->
 <footer class="wysrodkuj tlo-stopka margwew-48 font-large">
   <p>© 2024 <a href="mailto:w69832@student.wsiz.edu.pl?subject=Kontakt" title="Skontaktuj się!" class="stopka-kolor">Maciej Pawłucki</a></p>

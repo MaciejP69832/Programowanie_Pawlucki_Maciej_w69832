@@ -64,9 +64,50 @@ function sprawdzwiek(wiek) {
         localStorage.setItem("czywyswietlona", "true");
     }
 }
+/* Funkcja usuwa dane na temat wieku -> po odświeżeniu trzeba podać wiek ponownie */
 function usunwiek() {
     localStorage.removeItem("wiekusera");
     localStorage.removeItem("czywyswietlona");
     alert("Wiek został zresetowany. Odśwież stronę, aby wprowadzić nowy wiek.");
 }
+/* Zadanie 4 */
+/* Funkcja generuje losowy numer HEX dla koloru i zmienia tło przycisku po jego wciśnięciu, następnie po wybraniu innego przycisku wcześniejszy wraca do stanu poprzedniego */
+function Zadanie4(buttonId) {
+   function losowykolor() {
+    var litery = '0123456789ABCDEF';
+    var kolory = '#';
+    for (var i = 0; i < 6; i++) {
+        kolory += litery[Math.floor(Math.random() * 16)];
+    }
+    return kolory;
+} 
+var przyciski = document.getElementsByTagName('button');
 
+for (var i = 0; i < przyciski.length; i++) {
+    if (przyciski[i].id === buttonId) {
+        var losowykolor = losowykolor(); 
+        przyciski[i].style.backgroundColor = losowykolor;
+    } else {
+        przyciski[i].style.backgroundColor = '';
+    }
+}
+}
+/* Zadanie 5 */
+/* Wybrałem przycisk, który będzie ukrywał zegarek na stronie */
+function Zadanie5() {
+    function zegarek() {
+    var czas = new Date();
+    var godzina = czas.getHours();
+    var minuta = czas.getMinutes();
+    var sekunda = czas.getSeconds();
+    godzina = godzina < 10 ? '0' + godzina : godzina;
+    minuta = minuta < 10 ? '0' + minuta : minuta;
+    sekunda = sekunda < 10 ? '0' + sekunda : sekunda;
+    document.getElementById('czas').innerHTML = godzina + ':' + minuta + ':' + sekunda;
+    }
+    
+    window.onload = function() {
+    setInterval(Zadanie10, 1000);
+    zegarek(); 
+    }
+}

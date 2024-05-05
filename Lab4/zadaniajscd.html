@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../stylobuk.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f479.svg">
     <script src="../Lab4/script.js"></script>
 <!-- Ustawienie globalne dla layoutu -->
 <style>
@@ -90,11 +91,21 @@ Zadanie3()
 <!-- Zadanie 3 -->
 <div class="kontener">
   <div class="zawartosc" style="max-width:700px">
-    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 2</span></h5>
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 3</span></h5>
     <p> Napisz funkcję weryfikującą czy użytkownik jest pełnoletni uruchamiająca się przy 
       otworzeniu strony. W przypadku niespełnienia warunku ma zostać przekierowany na 
-      wariant strony dla dzieci. Wiek zapisuje się w pamięci lokalnej - naciśnij przycisk aby ją usunąć!</p>
+      wariant strony dla dzieci. Wiek zapisuje się w pamięci lokalnej - naciśnij przycisk aby usunąć wiek!</p>
     <button onclick="usunwiek()">Usuń wiek!</button>
+  </div>
+</div>
+<!-- Zadanie 4 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 3</span></h5>
+    <p> Stwórz trzy przyciski, po kliknięciu każdego z nich, zmień kolor tła tylko klikniętego przycisku. Jeśli któryś z przycisków już ma zmienione tło, to przy kliknięciu innego przycisku jego kolor tła powinien powrócić do pierwotnego stanu, a kolor klikniętego przycisku powinien się zmienić.</p>
+    <button id="button1" onclick="Zadanie4('button1')">Przycisk 1</button>
+    <button id="button2" onclick="Zadanie4('button2')">Przycisk 2</button>
+    <button id="button3" onclick="Zadanie4('button3')">Przycisk 3</button>
   </div>
 </div>
 <!-- Kawałek marginesu do oddzielenia sekcji -->

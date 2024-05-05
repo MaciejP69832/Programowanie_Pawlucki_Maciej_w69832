@@ -180,6 +180,14 @@ function Zadanie9() {
         alert(`Błąd: ${error}. Podaj dodatnie liczby całkowite.`);
     }
 }
+function nwd(a, b) {
+    while (b !== 0) {
+        let temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
 /* Zadanie 10 */
 function Zadanie10() {
     var czas = new Date();
@@ -196,14 +204,6 @@ window.onload = function() {
     setInterval(Zadanie10, 1000);
     Zadanie10(); 
 };
-function nwd(a, b) {
-    while (b !== 0) {
-        let temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-}
 /* Zadanie 11 */
 function Zadanie11_1() {
     return Math.floor(Math.random() * 101);

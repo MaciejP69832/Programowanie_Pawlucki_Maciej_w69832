@@ -76,3 +76,160 @@ h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-
 
 
 .obrazek{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+
+
+.Zadanie7Tabela {
+    border-collapse: collapse;
+    width: 25%; 
+    margin: 0 auto; 
+  }
+  
+  .Zadanie7Tabela th, .Zadanie7Tabela td {
+    padding: .25em .5em;
+    text-align: left;
+  }
+  
+  .Zadanie7Tabela td {
+    background-color: black;
+  }
+  
+  .zigzag {
+    border-collapse: separate;
+    border-spacing: .25em 1em;
+  }
+  
+  .zigzag tbody tr:nth-child(odd) {
+    transform: rotate(2deg);
+  }
+  
+  .zigzag thead tr, .zigzag tbody tr:nth-child(even) {
+    transform: rotate(-2deg);
+  }
+
+  .temp-converter-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.temp-converter-container {
+    background-color: #f1f1f1;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+
+}
+.temp-converter-title {
+    margin-bottom: 20px;
+}
+.temp-converter-input {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.temp-converter-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.temp-converter-button:hover {
+    background-color: #0056b3;
+}
+.nwd-input {
+  width: 200px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+.nwd-button {
+  width: 200px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nwd-button:hover {
+  background-color: rgb(22, 45,90);
+  color: #fff;
+}
+
+
+/* style dla kalkulatora zadanie 10 */
+.kalkuobszar {
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  margin-block-start: 2em;
+  max-inline-size: 22rem;
+  overflow: hidden;
+}
+.wynik__kalku {
+  background: darkgrey;
+  color: white;
+  font-size: 2rem;
+  padding-block-start: 0.5rem;
+  padding-block-end: 0.5rem;
+  padding-inline-end: 0.75rem;
+  text-align: end;
+}
+.klawisze__kalku {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+  background: lightgray;
+}
+.klawisz__kalku {
+  background: lightslategrey;
+  border: none;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  padding-inline-end: 1.25rem;
+  padding-inline-start: 1.25rem;
+  font-size: 1.5rem;
+}
+.klawisz__kalku:active,
+.klawisz__kalku:focus {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+  outline: none;
+}
+.klawisz__kalku--operator {
+  background: lightgray;
+}
+.klawisz__kalku:active {
+  background: hsl(208, 24%, 80%);
+}
+.klawisz__kalku--enter {
+  grid-column: 4 / 5;
+  grid-row: 5 /  5;
+  background: lightyellow;
+}
+.klawisz__kalku--power {
+  grid-column: 4 / 5;
+  grid-row: 2 / span 1;
+  background: lightgray;
+}
+.klawisz__kalku--nawias1 {
+  grid-column: 4 / 5;
+  grid-row: 3 / span 1;
+  background: lightgray;
+}
+.klawisz__kalku--nawias2 {
+  grid-column: 4 / 5;
+  grid-row: 4 / span 1;
+  background: lightgray;
+}

@@ -203,7 +203,7 @@ function Zadanie10() {
 window.onload = function() {
     setInterval(Zadanie10, 1000);
     Zadanie10(); 
-};
+}
 /* Zadanie 11 */
 function Zadanie11_1() {
     return Math.floor(Math.random() * 101);

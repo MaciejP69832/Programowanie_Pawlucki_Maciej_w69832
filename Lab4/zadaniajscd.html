@@ -101,13 +101,131 @@ Zadanie3()
 <!-- Zadanie 4 -->
 <div class="kontener">
   <div class="zawartosc" style="max-width:700px">
-    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 3</span></h5>
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 4</span></h5>
     <p> Stwórz trzy przyciski, po kliknięciu każdego z nich, zmień kolor tła tylko klikniętego przycisku. Jeśli któryś z przycisków już ma zmienione tło, to przy kliknięciu innego przycisku jego kolor tła powinien powrócić do pierwotnego stanu, a kolor klikniętego przycisku powinien się zmienić.</p>
     <button id="button1" onclick="Zadanie4('button1')">Przycisk 1</button>
     <button id="button2" onclick="Zadanie4('button2')">Przycisk 2</button>
     <button id="button3" onclick="Zadanie4('button3')">Przycisk 3</button>
   </div>
 </div>
+<!-- Zadanie 5 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 5</span></h5>
+    <p> Dodaj przycisk po kliknięciu którego zmieni się widoczność dowolnego element na 
+      stronie.</p>
+    <p> Naciśnij przycisk aby wyświetlić aktualną godzinę</p>
+    <button onclick="Zadanie5_1()">Wyświetl/Schowaj w paragrafie</button>
+    <div id="czas" class="bloczek wysrodkuj" style="display: none"></div>
+  </div>
+</div>
+<!-- Zadanie 6 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 6</span></h5>
+    <p>Dodaj pole tekstowe oraz przycisk. Po kliknięciu przycisku dodaj wartość pola 
+      tekstowego do listy</p>
+    <input type="text" id="Zadanie6" placeholder="Napisz coś...">
+    <button onclick="Zadanie6()" >Dodaj do listy</button>
+    <ul id="lista" style="display: none"></ul>
+  </div>
+</div>
+<!-- Zadanie 7 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 7</span></h5>
+    <p>Dodaj kolejne pole tekstowe. Dodaj tabelę z dwoma kolumnami Imię i Nazwisko. Po 
+      kliknięciu przycisku wartość pól tekstowych powinna zostać dodana do tabeli. Wyczyść 
+      wartość pól</p>
+      <form id="myForm">
+        <label for="inputImie">Imię:</label>
+        <input type="text" id="inputImie" name="inputImie" placeholder="Twoje imię...">
+        <label for="inputNazwisko">Nazwisko:</label>
+        <input type="text" id="inputNazwisko" name="inputNazwisko" placeholder="Twoje nazwisko...">
+        <button type="button" onclick="Zadanie7()">Dodaj Dane</button>
+      </form>
+      <br>
+      <div id="kontenertabela" class="Zadanie7Tabela zigzag"></div>
+  </div>
+</div>
+<!-- Zadanie 8 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 8</span></h5>
+    <p>Napisz funkcję, która będzie konwertować stopnie Celsjusza na stopnie Fahrenheita 
+      na podstawie podanej temperatury:
+      <li>Napisz dla niej GUI </li><br>
+      <li>Ma również liczyć odwrotnie</li>
+    </p>     
+      <div class="temp-converter-container">
+        <h2 class="temp-converter-title">Przelicznik temperatury</h2>
+        <p>Wprowadź liczbę stopni, a następnie wybierz jednostkę na którą chcesz przeliczyć (to znaczy, że gdy wybierzesz Celsjusze, wprowadzona ilość zostanie przeliczona z Fahrenheitów na Celsjusze).</p>
+        <input type="number" id="temperaturaInput" class="temp-converter-input" placeholder="Podaj stopnie...">
+        <select id="wyborjednostki" class="temp-converter-input">
+            <option value="celsius">Celsjusze</option>
+            <option value="fahrenheit">Fahrenheity</option>
+        </select>
+        <button class="temp-converter-button" onclick="Zadanie8()">Przelicz!</button>
+        <p id="wyniktemp"></p>
+    </div>
+  </div>
+</div>
+<!-- Zadanie 9 -->
+<!-- Wykorzystano rozwiązanie z Lab3, jedynie utworzono GUI, zamiast wyświetlania alertem. -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 9</span></h5>
+    <p>Znajdź największy wspólny dzielnik dwóch liczb całkowitych pobranych od 
+      użytkownika. Liczby pobierz od użytkownika z pola tekstowego. Wynik wpisuj do 
+      paragrafu poniżej.
+    </p>     
+      <div class="temp-converter-container">
+        <h2 class="temp-converter-title">Największy Wspólny Dzielnik</h2>
+        <p>Wprowadź dwie liczby osobno w polach i naciśnij oblicz, by sprawdzić, jaki jest ich NWD.</p>
+        <input type="number" id="nwdInput1" class="nwd-input" placeholder="Podaj pierwszą liczbę..."><br>
+        <input type="number" id="nwdInput2" class="nwd-input" placeholder="Podaj drugą liczbę..."><br>
+        <button class="nwd-button" onclick="Zadanie9()">Przelicz!</button>
+        <p id="wyniknwd"></p>
+    </div>
+  </div>
+</div>
+<!-- Zadanie 10 -->
+<div class="kontener">
+  <div class="zawartosc" style="max-width:700px">
+    <h5 class="wysrodkuj margwew-64"><span class="boxik szeroki">Zadanie 10</span></h5>
+    <p>Stwórz prosty kalkulator. 
+      <li> Powinien on zawierać funkcję: dodawania, odejmowania, mnożenia dzielenia i 
+      potęgowania;</li>
+      <br>
+      <li> Do jego obsługi powinien służyć GUI</li>
+    </p> <br><br>
+    <div class="kalkuobszar">
+      <div class="wynik__kalku" id="wynik">0</div>
+      <div class="klawisze__kalku">
+        <button class="klawisz__kalku klawisz__kalku--operator" onclick="oblicz('+')">+</button>
+        <button class="klawisz__kalku klawisz__kalku--operator" onclick="oblicz('-')">-</button>
+        <button class="klawisz__kalku klawisz__kalku--operator" onclick="oblicz('*')">&times;</button>
+        <button class="klawisz__kalku klawisz__kalku--operator" onclick="oblicz('/')">÷</button>
+        <button class="klawisz__kalku klawisz__kalku--power" onclick="oblicz('**')">^</button>
+        <button class="klawisz__kalku klawisz__kalku--nawias1" onclick="oblicz('&lpar;')">&lpar;</button>
+        <button class="klawisz__kalku klawisz__kalku--nawias2" onclick="oblicz('&rpar;')">&rpar;</button>
+        <button class="klawisz__kalku" onclick="dodajnumer('7')">7</button>
+        <button class="klawisz__kalku" onclick="dodajnumer('8')">8</button>
+        <button class="klawisz__kalku" onclick="dodajnumer('9')">9</button>
+        <button class="klawisz__kalku" onclick="dodajnumer('4')">4</button>
+        <button class="klawisz__kalku" onclick="dodajnumer('5')">5</button>
+        <button class="klawisz__kalku" onclick="dodajnumer('6')">6</button>
+        <button class="klawisz__kalku" onclick="dodajnumer('1')">1</button>
+        <button class="klawisz__kalku" onclick="dodajnumer('2')">2</button>
+        <button class="klawisz__kalku" onclick="dodajnumer('3')">3</button>
+        <button class="klawisz__kalku" onclick="dodajnumer('0')">0</button>
+        <button class="klawisz__kalku" onclick="dodajnumer('.')">.</button>
+        <button class="klawisz__kalku" onclick="przyciskAC()">AC</button>
+        <button class="klawisz__kalku klawisz__kalku--enter" onclick="rozwiaz()">=</button>
+      </div>
+    </div>
+    </div>
+  </div>
 <!-- Kawałek marginesu do oddzielenia sekcji -->
 <div class="margwew-64"></div>
 <!-- Stopka przyklejona do dołu -->
